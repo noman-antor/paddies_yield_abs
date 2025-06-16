@@ -47,28 +47,29 @@ This project leverages real agricultural and environmental datasets and integrat
 - Endpoint: `POST localhost:8050/soil_test`
 - Input Format
 
-  ![Soil Ingredient Input](assets/ss2.jpg)  
+  <img src="assets/ss2.jpg" alt="preview" width="300">
+ 
 - Output Format
 
-  ![Soil Ingredient Output](assets/ss3.jpg)
+  <img src="assets/ss3.jpg" alt="preview" width="300">
 
 ### Region Based Maximum Production
 - Endpoint: `POST localhost:8050/product_predict`
 - Input Format
 
-  ![Soil Ingredient Input](assets/ss4.jpg)  
+  <img src="assets/ss4.jpg" alt="preview" width="300">  
 - Output Format
 
-  ![Soil Ingredient Output](assets/ss6.jpg)
+  <img src="assets/ss6.jpg" alt="preview" width="300">
 
 ### Fertilizer/Pesticide Recommendation 
 - endpoint: `POST localhost:8050/fertil_predict`
 - Input Format
 
-  ![Soil Ingredient Input](assets/ss7.jpg)  
+   <img src="assets/ss7.jpg" alt="preview" width="300">
 - Output Format
 
-  ![Soil Ingredient Output](assets/ss8.jpg)
+   <img src="assets/ss8.jpg" alt="preview" width="300">
 
 ---
 
