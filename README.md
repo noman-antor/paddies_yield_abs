@@ -7,10 +7,12 @@
 ## 📌 Table of Contents
 
 - [📖 Project Overview](#-project-overview)
-- [🚀 Features](#-features)
+- [🚀 Functionalities](#-functionalities)
+  - [Soil Ingredients Test](#soil-ingredients-test)
+  - [Region Based Maximum Production](#region-based-maximum-production)
+  - [Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
 - [🛠 Tech Stack](#-tech-stack)
-- [📊 Data Pipeline](#-data-pipeline)
-  - [🧹 Data Preprocessing](#-data-preprocessing)
+- [🧹 Data Preprocessing](#-data-preprocessing)
 - [📌 Model Selection](#-model-selection)
   - [🧪 Soil Ingredient Test](#-soil-ingredient-test)
   - [🗺️ Region Based Maximum Production](#region-based-maximum-production)
@@ -36,13 +38,42 @@ This project leverages real agricultural and environmental datasets and integrat
 
 ---
 
-## 🚀 Features
+## 🚀 Functionalities
 
-- Predicts NPK values for soil samples
-- Estimates maximum rice yield for districts based on land area and season
-- Suggests optimal fertilizer and pesticide amounts
-- Clean, modular machine learning pipeline
-- RESTful FastAPI backend with interactive Swagger documentation
+- Data Validation: Pydantic
+- Networking Package: dio: ^5.4.0
+
+### Soil Ingredients Test
+- Endpoint: `POST localhost:8050/soil_test`
+- Input Format
+
+  ![Soil Ingredient Input](assets/ss2.jpg)  
+- Output Format
+
+  ![Soil Ingredient Output](assets/ss3.jpg)
+
+### Region Based Maximum Production
+- Endpoint: `POST localhost:8050/product_predict`
+- Input Format
+
+  ![Soil Ingredient Input](assets/ss4.jpg)  
+- Output Format
+
+  ![Soil Ingredient Output](assets/ss6.jpg)
+
+### Fertilizer/Pesticide Recommendation 
+- endpoint: `POST localhost:8050/fertil_predict`
+- Input Format
+
+  ![Soil Ingredient Input](assets/ss7.jpg)  
+- Output Format
+
+  ![Soil Ingredient Output](assets/ss8.jpg)
+
+---
+
+## 🎥 Demo Video 
+[Click here to watch full application](https://drive.google.com/file/d/1Or7wS_EG-0u5zYQWcEdlrTYJ365a3uq4/view?usp=sharing)
 
 ---
 
@@ -57,9 +88,7 @@ This project leverages real agricultural and environmental datasets and integrat
 
 ---
 
-## 📊 Data Pipeline
-
-### 🧹 Data Preprocessing
+## 🧹 Data Preprocessing
 
 - Missing data imputation
 - Outlier detection and removal
@@ -98,97 +127,6 @@ Models were evaluated for multiple sub-tasks:
 
 ---
 
-## 🔗 API Overview
-
-### Soil Ingredients Test
-- endpoint: `POST localhost:8050/soil_test`
-- Input Format
-```js
-{
-  "temp": 25.89,
-  "humidity": 52,
-  "ph": 5.6
-  "label": 3       // Chickpea
-}
-```
-
-- Output Format
-```python
-[
-    18.54,  # Nitrogen
-    70.66,  # Phosphorus
-    19.1    # Potassium
-]
-```
-
-### Region Based Maximum Production
-- endpoint: `POST localhost:8050/product_predict`
-- Input Format
-```js
-{
-  "season": 2,           // Summer   
-  "dist": 10,            // Mymensingh
-  "area": 4586235.256    // Land in hector
-}
-```
-
-- Output Format
-```python
-[
-    8084739.33,          # Amount of production (Ton)
-    1.9009888293129995   # Production per hector (Ton/hector)
-]
-```
-
-### Fertilizer/Pesticide Recommendation 
-- endpoint: `POST localhost:8050/fertil_predict`
-- Input Format
-```js
-{
-  "season": 2,                 // Summer   
-  "dist": 10,                  // Mymensingh
-  "area": 4586235.256,         // Land in hector
-  "prod": 8084739.33,          // Amount of production (Ton)
-  "yld": 1.9009888293129995    // Production per hector (Ton/hector)
-}
-```
-
-- Output Format
-```python
-[
-    624744176.0157341,    #Fertilizer
-    1408520.8137632033    #Pesticide
-]
-```
----
-
-## Project Structure
-```plaintest
-Paddies_Yield/
-│
-├── api/
-│   ├── main.py
-│   ├── requirements.txt
-├── dataset/
-│   ├── soil_ingredients.csv
-│   ├── maximum_production.csv
-│   ├── fertilizers_pesticides.csv
-├── model_files/
-│   ├── data_preprocessing.ipynb
-│   ├── model_build_on_maximum_production.ipynb
-│   ├── model_build_on_fertilizers_pesticides.ipynb
-│   ├── model_build_on_soil_ingredients.ipynb             
-├── paddies_yield_app/
-├── pkl/
-│   ├── RF_fertilization.pkl
-│   ├── scalerRF_fertil.pkl
-│   ├── RF_prodution.pkl
-│   ├── scalerRF_prod.pkl
-│   ├── RF_soil_test.pkl
-│   ├── scalerRF_soil_test.pkl               
-```
 
 
-## 🎥 Demo Video 
-[Click here to watch demo](https://drive.google.com/file/d/1Or7wS_EG-0u5zYQWcEdlrTYJ365a3uq4/view?usp=sharing)
 
