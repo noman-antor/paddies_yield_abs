@@ -10,14 +10,14 @@
 - [🚀 Functionalities](#-functionalities)
   - [Soil Ingredients Test](#soil-ingredients-test)
   - [Region Based Maximum Production](#region-based-maximum-production)
-  - [Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
+  - [Fertilizer & Pesticide Recommendation](#-fertilizer-&-pesticide-recommendation)
 - [🎥 Demo Video ](#-demo-video)
 - [🛠 Tech Stack](#-tech-stack)
 - [🧹 Data Preprocessing](#-data-preprocessing)
 - [📌 Model Selection](#-model-selection)
   - [🧪 Soil Ingredient Test](#-soil-ingredient-test)
   - [🗺️ Region Based Maximum Production](#region-based-maximum-production)
-  - [🌿 Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
+  - [🌿 Fertilizer & Pesticide Recommendation](#-fertilizer-&-pesticide-recommendation)
 
 ---
 
@@ -58,7 +58,7 @@ This project leverages real agricultural and environmental datasets and integrat
 
   <img src="assets/ss6.jpg" alt="preview" width="300">
 
-### Fertilizer/Pesticide Recommendation 
+### Fertilizer & Pesticide Recommendation 
 ---
 - endpoint: `POST localhost:8050/fertil_predict`
 - Input Format
@@ -112,7 +112,7 @@ Models were evaluated for multiple sub-tasks:
 
   ![Region Yield Prediction](assets/region_maximum_production.png)
 
-### 🌿 Fertilizer/Pesticide Recommendation 
+### 🌿 Fertilizer & Pesticide Recommendation 
 ---
 **Model Used:** `RandomForestRegressor` 
 - Recommends the quantity of fertilizer and pesticide required to reach the predicted maximum yield.
