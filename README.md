@@ -35,7 +35,7 @@ This project leverages real agricultural and environmental datasets and integrat
 ## 🚀 Functionalities
 
 - Data Validation: Pydantic
-- Networking Package: dio: ^5.4.0
+- Networking Package: dio 5.4.0
 
 ### Soil Ingredients Test
 ---
