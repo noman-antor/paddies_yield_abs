@@ -11,19 +11,13 @@
   - [Soil Ingredients Test](#soil-ingredients-test)
   - [Region Based Maximum Production](#region-based-maximum-production)
   - [Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
+- - [🎥 Demo Video ](#-demo-video)
 - [🛠 Tech Stack](#-tech-stack)
 - [🧹 Data Preprocessing](#-data-preprocessing)
 - [📌 Model Selection](#-model-selection)
   - [🧪 Soil Ingredient Test](#-soil-ingredient-test)
   - [🗺️ Region Based Maximum Production](#region-based-maximum-production)
   - [🌿 Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
-- [🔗 API Overview](#-api-overview)
-  - [Soil Ingredients Test](#soil-ingredients-test)
-  - [Region Based Maximum Production](#region-based-maximum-production)
-  - [Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
-- [📁 Project Structure](#project-structure)
-- [🎥 Demo Video ](#-demo-video)
-
 
 ---
 
