@@ -38,6 +38,7 @@ This project leverages real agricultural and environmental datasets and integrat
 - Networking Package: dio: ^5.4.0
 
 ### Soil Ingredients Test
+---
 - Endpoint: `POST localhost:8050/soil_test`
 - Input Format
 
@@ -48,6 +49,7 @@ This project leverages real agricultural and environmental datasets and integrat
   <img src="assets/ss3.jpg" alt="preview" width="300">
 
 ### Region Based Maximum Production
+---
 - Endpoint: `POST localhost:8050/product_predict`
 - Input Format
 
@@ -57,6 +59,7 @@ This project leverages real agricultural and environmental datasets and integrat
   <img src="assets/ss6.jpg" alt="preview" width="300">
 
 ### Fertilizer/Pesticide Recommendation 
+---
 - endpoint: `POST localhost:8050/fertil_predict`
 - Input Format
 
@@ -93,27 +96,24 @@ This project leverages real agricultural and environmental datasets and integrat
 
 Models were evaluated for multiple sub-tasks:
 
----
-
 ### 🧪 Soil Ingredient Test  
+---
 **Model Used:** `RandomForestRegressor`  
 - Predicts the portion of Nitrogen (N), Phosphorus (P), and Potassium (K) in the soil based on input soil characteristics.
 - Train-test split: `80/20`
 
   ![Soil Ingredient Prediction](assets/soil_ingredient_test.png)
 
+### 🗺️ Region Based Maximum Production 
 ---
-
-### 🗺️ Region Based Maximum Production  
 **Model Used:** `RandomForestRegressor`  
 - Estimates the maximum potential paddy production for a district in Bangladesh given land area and season.
 - Train-test split: `80/20`
 
   ![Region Yield Prediction](assets/region_maximum_production.png)
 
+### 🌿 Fertilizer/Pesticide Recommendation 
 ---
-
-### 🌿 Fertilizer/Pesticide Recommendation  
 **Model Used:** `RandomForestRegressor` 
 - Recommends the quantity of fertilizer and pesticide required to reach the predicted maximum yield.
 - Train-test split: `80/20`
