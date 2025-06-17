@@ -11,7 +11,7 @@
   - [Soil Ingredients Test](#soil-ingredients-test)
   - [Region Based Maximum Production](#region-based-maximum-production)
   - [Fertilizer/Pesticide Recommendation](#-fertilizerpesticide-recommendation)
-- - [🎥 Demo Video ](#-demo-video)
+- [🎥 Demo Video ](#-demo-video)
 - [🛠 Tech Stack](#-tech-stack)
 - [🧹 Data Preprocessing](#-data-preprocessing)
 - [📌 Model Selection](#-model-selection)
